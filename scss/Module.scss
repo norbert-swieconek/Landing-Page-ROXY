@@ -1,0 +1,104 @@
+@import "Base";
+
+.containerHeader {
+    height: 100vh;
+    background: rgb(29,30,148);
+    background: linear-gradient(105deg, rgba(29,30,148,1) 17%, rgba(122,32,225,1) 50%, rgba(160,71,189,1) 72%, rgba(250,47,211,1) 100%);
+    color: white;
+}
+
+.containerHeader__menu {
+    padding: 0 10px 0 10px;
+    
+
+    &--paragraph {
+        margin: 0;
+        font-size: 25px;  
+    }
+
+    &--hamburger {
+        height: 30px;
+    }
+}
+
+.containerHeader__logo {
+    
+    &--name {
+        border: 15px solid white;
+        font-size: 100px;
+        font-weight: bold;
+        line-height: 0.9;
+        padding: 25px;
+    }
+}
+
+.containerBenefits {
+    margin: 100px 0 100px 0;
+}
+
+.containerBenefits__admission {
+    margin: 0 0 50px 0;
+    text-align: center;
+    
+
+    span {
+        color: #FF00CC;
+    }
+
+    &--paragraph {
+        margin: 0;
+        font-size: 15px;
+    }
+}
+
+.benefitsList__single {
+    text-align: center;
+    margin: 0 10px 0 10px;
+    box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
+    -moz-box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
+
+    &--icon {
+        height: 45px;
+        margin-bottom: 20px;
+    }
+
+    &--theme {
+        font-size: 25px;
+    }
+
+    &--paragraph{
+        font-size: 15px;
+    }
+}
+
+.containerFeatures {
+    background: rgb(29,30,148);
+    background: linear-gradient(105deg, rgba(29,30,148,1) 17%, rgba(122,32,225,1) 50%, rgba(160,71,189,1) 72%, rgba(250,47,211,1) 100%);
+    color: white;
+    padding: 100px 0 100px 0;
+
+    &__theme {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    &__paragraph {
+        font-size: 15px;
+        margin-top: 20px;
+        text-align: left;
+        margin-left: 15px;
+    }
+
+    &__btn {
+        background: none;
+        color: white;
+        font-weight: bold;
+        border: white 1px solid;
+        font-size: 13px;
+        padding: 5px 20px 5px 20px;
+        border-radius: 50px;
+        margin-left: 15px;
+        margin-bottom: 50px;
+    }
+}
