@@ -49,3 +49,100 @@
         grid-row: 5 / 6;
     }
 }
+
+.containerFeatures {
+    display: flex;
+    flex-direction: column;
+    
+    &__btn {
+        align-self: flex-start;
+    }
+}
+
+.containerProgress {
+    display: flex;
+    flex-direction: column;
+}
+
+.progressBar {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerTestimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.commentPerson {
+    display: flex;
+    align-items: center;
+
+    &__image {
+        align-self: center;
+    }
+
+    &__paragraph {
+        align-self: center;
+    }
+}
+
+.containerWorks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.containerCooperation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerSolution {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.containerIcons {
+    display: flex;
+    justify-content: center;
+    
+
+    &__icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.containerInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerSocial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__icons {
+        display: flex;
+        gap: 30px;
+    }
+}
