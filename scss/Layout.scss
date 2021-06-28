@@ -122,6 +122,7 @@
     display: flex;
     justify-content: center;
     
+    
 
     &__icon {
         display: flex;
@@ -144,5 +145,121 @@
     &__icons {
         display: flex;
         gap: 30px;
+    }
+}
+
+// for tablets
+
+@media screen and (min-width: 768px) {
+
+    .benefitsList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 40vh);
+
+        &__one {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+
+        &__two {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+
+        &__three {
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+        }
+
+        &__four {
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+
+        &__five {
+            grid-row: 1 / 2;
+            grid-column: 3 / 4;
+        }
+
+        &__six {
+            grid-row: 2 / 3;
+            grid-column: 3 / 4; 
+        }
+    }
+
+    .containerFeatures {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+
+        &__theme, &__paragraph, &__btn {
+            grid-column: 1 / 2;
+        }
+
+        &__image {
+            grid-column: 2 / 3;
+            grid-row: 1 / 4;
+            
+        }
+
+        &__btn {
+            justify-self: flex-start;
+        }
+    }
+
+    .containerProgress {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        &__image {
+            grid-column: 1 / 2;
+            grid-row: 1 / 5;
+            
+        }
+        &__theme, &__paragraph, .progressBar {
+            grid-column: 2 / 3;
+        }
+
+    }
+
+    // containerWorks 
+    .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        &__first {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        &__second {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        &__third {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+
+        &__fourth {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        &__five {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        &__six {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+    }
+
+    .containerIcons {
+        gap: 20px;
     }
 }
