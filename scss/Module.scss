@@ -98,7 +98,7 @@
         font-weight: bold;
         border: white 1px solid;
         font-size: 18px;
-        padding: 10px 25px 10px 25px;
+        padding: 5px 25px 5px 25px;
         border-radius: 50px;
         margin-left: 15px;
         margin-bottom: 50px;
@@ -382,7 +382,7 @@
     }
 
     // containerFeatures 
-    .containerFeatures, {
+    .containerFeatures {
         padding: 100px 150px 0 150px;
 
         &__theme {
@@ -495,3 +495,87 @@
     }
 }
 
+@media screen and (min-width: 992px) {
+    .containerHeader {
+        padding: 0 50px 0 50px;
+    }
+
+    .containerBenefits__admission--theme {
+        font-size: 28px;
+    }
+
+    .containerBenefits__admission--paragraph {
+        font-size: 12px;
+        padding: 0 450px 0 450px;
+    }
+
+    .benefitsList {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .benefitsList__single {
+
+        &--icon {
+            height: 35px;
+        }
+
+        &--theme {
+            font-size: 20px;
+        }
+
+        &--paragraph {
+            font-size: 12px;
+        }
+    }
+
+    .containerFeatures {
+        height: 100vh;
+        padding-left: 300px;
+        padding-right: 300px;
+
+        &__theme {
+           font-size: 20px;
+           min-width: 200px;
+        }
+
+        &__paragraph {
+            font-size: 13px;
+        }
+
+        &__btn {
+            font-size: 10px;
+        }
+
+        &__image {
+            height: 500px;
+        }
+
+        .featuresMargin {
+            margin-top: 150px;
+        }
+    }
+
+    .containerProgress {
+        height: 100vh;
+        padding-left: 300px;
+        padding-right: 300px;
+
+        &__image {
+            height: 500px;
+        }
+
+        &__theme {
+            font-size: 20px;
+            min-width: 200px;
+         }
+ 
+         &__paragraph {
+             font-size: 13px;
+         }
+
+         .progressMargin {
+
+         }
+    }
+}
