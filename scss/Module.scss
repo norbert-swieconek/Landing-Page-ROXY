@@ -235,9 +235,6 @@
 .containerContact {
     text-align: center;
     margin: 100px 15px 60px 15px;
-    box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
-    -moz-box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
     border-radius: 5px;
 
     &__theme {
@@ -261,6 +258,12 @@
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 50px;
+    }
+
+    form {
+        box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
+        -webkit-box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
+        -moz-box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
     }
 }
 
@@ -560,6 +563,7 @@
         height: 100vh;
         padding-left: 300px;
         padding-right: 300px;
+        padding-top: 50px;
 
         &__image {
             height: 500px;
@@ -568,14 +572,145 @@
         &__theme {
             font-size: 20px;
             min-width: 200px;
-         }
+        }
  
          &__paragraph {
              font-size: 13px;
-         }
+        }
 
-         .progressMargin {
+         .progressBar {
+            margin-top: 30px;
+        }
 
-         }
+         .desktopContainerProgress {
+            margin-top: 150px;
+        }
+    }
+
+    .containerTestimonials {
+        background-size: cover;
+
+        &__theme {
+            font-size: 25px;
+        }
+
+        &__image {
+            height: 50px;
+        }
+
+        &__paragraph {
+            font-size: 18px;
+            padding: 0 350px 0 350px;
+        }
+
+        .commentPerson__image {
+            height: 45px;
+        }
+
+        .commentPerson__paragraph {
+            font-size: 12px;
+        }
+    }
+
+    .containerWorks {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 0;
+
+        &__theme {
+            font-size: 25px;
+        }
+
+        &__paragraph {
+            font-size: 13px;
+            padding: 0 350px 0 350px;
+        }
+
+        &__list {
+            font-size: 12px;
+        }
+
+        &__image {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+    }
+
+    .containerCooperation {
+        height: 35vh;
+        
+        &__theme {
+            font-size: 22px;
+            font-weight: normal;
+        }
+
+        &__image {
+            height: 50px;
+        }
+    }
+
+    .containerContact {
+        
+
+        &__theme {
+            font-size: 25px;
+        }
+
+        &__input {
+            font-size: 12px;
+            padding: 5px 0 5px 10px;
+            width: 100%;
+        }
+
+        form {
+            width: 400px;
+        }
+    }
+
+    .containerSolution {
+        text-align: left;
+
+        &__theme {
+            font-size: 25px;
+        }
+
+        &__paragraph {
+            font-size: 12px;
+        }
+
+        &__btn {
+            font-size: 12px;
+        }
+
+        .containerIcons__icon--image {
+            height: 40px;
+        }
+
+        .containerIcons__icon--paragraph {
+            font-size: 12px;
+        }
+    }
+
+    .containerInformation {
+        
+        &__theme {
+            font-size: 25px;
+        }
+
+        &__paragraph {
+            font-size: 12px;
+        }
+
+        &__btn {
+            font-size: 12px;
+        }
+    }
+
+    .containerSocial__paragraph {
+        font-size: 12px;
+    }
+
+    .containerSocial__icons--single {
+        height: 12px;
     }
 }
