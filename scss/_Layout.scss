@@ -57,11 +57,19 @@
     &__btn {
         align-self: flex-start;
     }
+
+    &__image {
+        align-self: center;
+    }
 }
 
 .containerProgress {
     display: flex;
     flex-direction: column;
+
+    &__image {
+        align-self: center;
+    }
 }
 
 .progressBar {
@@ -200,6 +208,7 @@
         &__image {
             grid-column: 2 / 3;
             grid-row: 1 / 4;
+            align-self: flex-start;
             
         }
 
@@ -211,10 +220,12 @@
     .containerProgress {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
 
         &__image {
             grid-column: 1 / 2;
             grid-row: 1 / 5;
+            justify-self: flex-end;
             
         }
         
@@ -227,6 +238,8 @@
     .images {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 30vh 10vh 18vh 3vh;
+        column-gap: 20px;
 
         &__first {
             grid-column: 1 / 2;
@@ -245,17 +258,17 @@
 
         &__fourth {
             grid-column: 2 / 3;
-            grid-row: 2 / 3;
+            grid-row: 2 / 5;
         }
 
         &__five {
             grid-column: 1 / 2;
-            grid-row: 2 / 3;
+            grid-row: 3 / 4;
         }
 
         &__six {
             grid-column: 3 / 4;
-            grid-row: 2 / 3;
+            grid-row: 3 / 4;
         }
     }
 
@@ -298,10 +311,8 @@
     }
 
     .images {
-        gap: 20px;
         grid-template-rows: 56vh 26vh 42vh 25vh;
-
-        
+        row-gap: 40px;
 
         &__first {
             grid-row: 1 / 3;
