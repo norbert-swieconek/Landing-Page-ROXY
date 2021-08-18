@@ -1,0 +1,358 @@
+.containerHeader {
+    display: grid;
+    grid-template-rows: 10vh 90vh;
+
+    &__menu {
+        grid-row: 1 / 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        grid-row: 2 / 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.benefitsList {
+    display: grid;
+    grid-template-rows: repeat(6, 35vh);
+    grid-gap: 25px;
+    
+    &__single {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__one {
+        grid-row: 1 / 2;
+    }
+
+    &__two {
+        grid-row: 2 / 3;
+    }
+
+    &__three {
+        grid-row: 3 / 4;
+    }
+
+    &__four {
+        grid-row: 4 / 5;
+    }
+
+    &__five {
+        grid-row: 5 / 6;
+    }
+}
+
+.containerFeatures {
+    display: flex;
+    flex-direction: column;
+    
+    &__btn {
+        align-self: flex-start;
+    }
+
+    &__image {
+        align-self: center;
+    }
+}
+
+.containerProgress {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+        align-self: center;
+    }
+}
+
+.progressBar {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerTestimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.commentPerson {
+    display: flex;
+    align-items: center;
+
+    &__image {
+        align-self: center;
+    }
+
+    &__paragraph {
+        align-self: center;
+    }
+}
+
+.containerWorks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__list {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.containerCooperation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerSolution {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.containerIcons {
+    display: flex;
+    justify-content: center;
+    
+    
+
+    &__icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.containerInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerSocial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__icons {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+// for tablets
+
+@media screen and (min-width: 768px) {
+
+    .benefitsList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 40vh);
+
+        &__one {
+            grid-row: 1 / 2;
+            grid-column: 1 / 2;
+        }
+
+        &__two {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+
+        &__three {
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+        }
+
+        &__four {
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+
+        &__five {
+            grid-row: 1 / 2;
+            grid-column: 3 / 4;
+        }
+
+        &__six {
+            grid-row: 2 / 3;
+            grid-column: 3 / 4; 
+        }
+    }
+
+    .containerFeatures {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+
+        &__theme, &__paragraph, &__btn {
+            grid-column: 1 / 2;
+        }
+
+        &__image {
+            grid-column: 2 / 3;
+            grid-row: 1 / 4;
+            align-self: flex-start;
+            
+        }
+
+        &__btn {
+            justify-self: flex-start;
+        }
+    }
+
+    .containerProgress {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+
+        &__image {
+            grid-column: 1 / 2;
+            grid-row: 1 / 5;
+            justify-self: flex-end;
+            
+        }
+        
+        &__theme, &__paragraph, .progressBar {
+            grid-column: 2 / 3;
+        }
+    }
+
+    // containerWorks 
+    .images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 30vh 10vh 18vh 3vh;
+        column-gap: 20px;
+
+        &__first {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+
+        &__second {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        &__third {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+
+        &__fourth {
+            grid-column: 2 / 3;
+            grid-row: 2 / 5;
+        }
+
+        &__five {
+            grid-column: 1 / 2;
+            grid-row: 3 / 4;
+        }
+
+        &__six {
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+    }
+
+    .containerIcons {
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .containerFeatures {
+        display: grid;
+        grid-template-rows: 8vh 15vh 10vh;
+        column-gap: 40px;
+
+        &__theme {
+            grid-row: 1 / 2;
+        }
+
+        &__paragraph {
+            grid-row: 2 / 3;
+
+        }
+
+        &__btn {
+            grid-row: 3 / 4;
+        }
+    }
+
+    .containerProgress {
+       
+
+        .desktopContainerProgress {
+            display: grid;
+            grid-template-rows: 8vh 10vh 5vh 5vh;
+        }
+
+        &__image {
+            justify-self: flex-end;
+        }
+    }
+
+    .images {
+        grid-template-rows: 56vh 26vh 42vh 25vh;
+        row-gap: 40px;
+
+        &__first {
+            grid-row: 1 / 3;
+        }
+
+        &__second {
+            grid-row: 1 / 2;
+        }
+
+        &__third {
+            grid-row: 1 / 3;
+        }
+
+        &__fourth {
+            grid-row: 2 / 5;
+        }
+
+        &__five {
+            grid-row: 3 / 4;
+        }
+
+        &__six {
+            grid-row: 3 / 4;
+        }
+    }
+
+    .containerContact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+
+        form {
+            grid-column: 1 / 2;
+            justify-self: flex-end;
+        }
+
+        .containerSolution {
+            grid-column: 2 / 3;
+            display: flex;
+            justify-items: flex-start;
+        }
+    }
+}

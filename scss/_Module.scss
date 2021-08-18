@@ -1,0 +1,797 @@
+@import "_Base";
+@import "_Variables";
+
+@mixin imageWithShadow {
+    height: 30rem;
+    width: 15.625rem;
+    box-shadow: 0px 46px 61px 10px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 0px 46px 61px 10px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 46px 61px 10px rgba(0,0,0,0.56);
+}
+
+// header
+.containerHeader {
+    height: 100vh;
+    width: 100%;
+    background: #1d1e94;
+    background: linear-gradient(105deg, rgba(29,30,148,1) 17%, rgba(122,32,225,1) 50%, rgba(160,71,189,1) 72%, rgba(250,47,211,1) 100%);
+    color: white;
+}
+
+// Navigation part of header
+.containerHeader__menu {
+    padding: 0 0.625rem 0 0.625rem;
+    
+
+    &--paragraph {
+        margin: 0;
+        font-size: 1.563rem;  
+    }
+
+    &--hamburger {
+        height: 1.875rem;
+    }
+}
+
+// Logo part of header
+.containerHeader__logo {
+    
+    &--name {
+        border: 0.938rem solid white;
+        font-size: 6.25rem;
+        font-weight: bold;
+        line-height: 0.9;
+        padding: 1.563rem;
+    }
+}
+
+// Squares with description
+.containerBenefits {
+    margin: 4.25rem 0 6.25rem 0;
+}
+
+// Part of containerBenefits
+.containerBenefits__admission {
+    margin: 0 0 4.125rem 0;
+    text-align: center;
+    
+    &--theme {
+        font-size: 2.188rem;
+        font-weight: normal;
+    }
+
+    span {
+        color: $pink-color;
+    }
+
+    &--paragraph {
+        margin: 0;
+        font-size: 0.938rem;
+        padding: 0 3.125rem 0 3.125rem;
+    }
+}
+
+// Part of containerBenefits
+.benefitsList__single {
+    text-align: center;
+    margin: 0 0.625rem 0 0.625rem;
+    box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
+    -moz-box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
+
+    &--icon {
+        height: 2.813rem;
+        margin-bottom: 1rem;
+    }
+
+    &--theme {
+        font-size: 1.563rem;
+    }
+
+    &--paragraph{
+        font-size: 0.938rem;
+    }
+}
+
+// Button FEATURES and description
+.containerFeatures {
+    background: rgb(29,30,148);
+    background: linear-gradient(105deg, rgba(29,30,148,1) 17%, rgba(122,32,225,1) 50%, rgba(160,71,189,1) 72%, rgba(250,47,211,1) 100%);
+    color: white;
+    padding: 5.25rem 0 11.25rem 0;
+
+    &__theme {
+        font-size: 1.875rem;
+        margin-left: 0.938rem;
+        font-weight: normal;
+    }
+
+    &__paragraph {
+        font-size: 1.125rem;
+        margin-top: 1.25rem;
+        text-align: left;
+        margin-left: 0.938rem;
+    }
+
+    &__btn {
+        background: none;
+        color: white;
+        font-weight: bold;
+        border: white 0.063rem solid;
+        font-size: 1.125rem;
+        padding: 0.313rem 1.563rem 0.313rem 1.563rem;
+        border-radius: 3.125rem;
+        margin-left: 0.938rem;
+        margin-bottom: 3.125rem;
+    }
+
+    &__image {
+        @include imageWithShadow;
+    }
+}
+
+// Progress bar and description
+.containerProgress {
+    margin: 7.375rem 0 6.25rem 0;
+
+    &__theme {
+        font-size: 1.875rem;
+        margin-left: 0.938rem;
+        font-weight: normal;
+    }
+
+    &__paragraph {
+        font-size: 1.125rem;
+        margin-top: 1.25rem;
+        text-align: left;
+        margin-left: 1.125rem;
+        margin-bottom: 1.875rem;
+    }
+
+    &__image {
+        @include imageWithShadow;
+        margin-bottom: 9.375rem;
+    }
+}
+
+// Part of containerProgress
+.progressBar {
+    background-color: $background-gray;
+    margin: 0 0.938rem 1.25rem 0.938rem;
+    border-radius: 0.313rem;
+    height: 2.5rem;
+
+    &__percent {
+        color: white;
+        background-color: #FF00CC;
+        height: 2.5rem;
+        margin-right: 1.25rem;
+        margin-bottom: 0;
+        border-top-left-radius: 0.313rem;
+        border-bottom-left-radius: 0.313rem;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    &__percentSecond {
+        margin-right: 2.5rem;
+    }
+}
+
+// Comments of clients
+.containerTestimonials {
+    text-align: center;
+    background-image: url('../img/bg-white.jpg');
+ 
+    &__theme {
+        font-size: 2.5rem;
+        margin-bottom: 6.25rem;
+        margin-top: 3.125rem;
+    }
+
+    &__image {
+        height: 6.25rem; 
+    }
+
+    &__paragraph {
+        font-size: 1.563rem;
+    }
+
+}
+
+// Part of containerTestimonials
+.commentPerson {
+    text-align: left;
+    margin-top: 1.875rem;
+    margin-bottom: 4.688rem;
+   
+
+    &__image {
+        height: 4.375rem;
+        border-radius: 50%;
+    }
+
+    &__paragraph {
+        margin-left: 0.625rem;
+        font-size: 1.125rem;
+        margin-bottom: 0;
+    }
+}
+
+// Gallery
+.containerWorks {
+    text-align: center;
+    padding-top: 4.375rem;
+    margin: 0 0.938rem 0 0.938rem;
+    margin-bottom: 6.25rem;
+
+    &__theme {
+        font-size: 1.875rem;
+    }
+
+    &__paragraph {
+        font-size: 1.125rem;
+    }
+
+    &__image {
+        width: 100%;
+        margin: 0.938rem 0 0.938rem 0;
+        border-radius: 0.313rem;
+    }
+
+    &__list {
+        margin-top: 1.25;
+        list-style-type: none;
+        color: #FF00CC;
+        font-size: 1.063rem;
+        padding: 0;
+    }
+}
+
+// Cooperation with company
+.containerCooperation {
+    background: rgb(29,30,148);
+    background: linear-gradient(105deg, rgba(29,30,148,1) 17%, rgba(122,32,225,1) 50%, rgba(160,71,189,1) 72%, rgba(250,47,211,1) 100%);
+    height: 60vh;
+    color: white;
+
+    &__theme {
+        text-align: center;
+        margin-bottom: 1.25rem;
+        font-size: 2.188rem;
+    }
+
+    &__image {
+        margin-top: 1.25rem;
+        height: 7.5rem;
+    }
+} 
+
+// Contact with clients
+.containerContact {
+    
+    margin: 5rem 0.938rem 0 0.938rem;
+    border-radius: 0.313rem;
+
+    &__theme {
+        margin: 2.5rem 0 1.25rem 0;
+        font-size: 2.188rem;
+    }
+
+    &__input {
+        width: 15rem;
+        margin-bottom: 1.25rem;
+        font-size: 1.125rem;
+        padding: 0.625rem 0 0.625rem 0.938rem;
+    }
+
+    &__btn {
+        background-color: $pink-color;
+        border: none;
+        color: white;
+        padding: 0.625rem 1.25rem 0.625rem 1.25rem;
+        border-radius: 3.125rem;
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin-bottom: 3.125rem;
+    }
+
+    form {
+        box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
+        -webkit-box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
+        -moz-box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
+        margin-bottom: 3.125rem;
+        text-align: center;
+    }
+}
+
+// Solution for clients
+.containerSolution {
+    margin: 0 0.938rem 6.25rem 0.938rem;
+
+    &__theme {
+        font-size: 2.188rem;
+        margin-bottom: 2.188rem;
+    }
+
+    &__paragraph {
+        font-size: 1.125rem;
+    }
+
+    &__btn {
+        border: none;
+        font-weight: bold;
+        color: $pink-color;
+        margin-top: 1.25rem;
+        font-size: 1.125rem;
+        background: none;
+    }
+}
+
+// Part of containerSolution
+.containerIcons__icon {
+    text-align: center;
+    margin-top: 1.25rem;
+
+    &--image {
+        height: 3.75rem;
+    }
+
+    &--paragraph {
+        font-size: 1.125rem;
+    }
+}
+
+// Information about company, part of footer
+.containerInformation {
+    background: rgb(29,30,148);
+    background: linear-gradient(105deg, rgba(29,30,148,1) 17%, rgba(122,32,225,1) 50%, rgba(160,71,189,1) 72%, rgba(250,47,211,1) 100%);
+    color: white;
+    text-align: center;
+    padding-bottom: 5rem;
+
+    &__theme {
+        margin-top: 6.25rem;
+        font-size: 2.5rem;
+        font-weight: normal;
+    }
+
+    &__paragraph {
+        font-size: 1.125rem;
+        margin: 0 0.625rem 0 0.625rem;
+    }
+
+    &__btn {
+        background: none;
+        color: white;
+        border: 0.094rem solid white;
+        border-radius: 3.125rem;
+        padding: 0.313rem 1.25rem 0.313rem 1.25rem;
+        font-size: 1.125rem;
+        font-weight: bold;
+        margin-top: 0.938rem;
+    }
+}
+
+// Bottom of footer
+.containerSocial {
+
+    &__paragraph {
+        margin-top: 1.25rem;
+        font-size: 1.125rem;
+        
+        span {
+            color: $pink-color;
+        }
+    }
+}
+
+// Part of containerSocial
+.containerSocial__icons {
+
+    &--single {
+        height: 1.25rem;
+        filter: invert(28%) sepia(91%) saturate(7493%) hue-rotate(306deg) brightness(110%) contrast(113%);
+        margin-bottom: 1.563rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    // Squares with description
+    .containerBenefits {
+        margin-top: 4.375rem;
+    }
+
+    // Part of containerBenefits
+    .containerBenefits__admission--theme {
+        font-weight: normal;
+    }
+
+    // Part of containerBenefits
+    .containerBenefits__admission--paragraph {
+        padding: 0 9.375rem 0 9.375rem;
+    }
+
+    // Part of containerBenefits
+    .benefitsList {
+        margin-left: 3.125rem;
+        margin-right: 3.125rem; 
+
+        &__upperTB {
+            bottom: 6.25rem;
+        }
+    }
+
+    // Part of containerBenefits
+    .benefitsList__single {
+        width: 100%;
+
+        &--paragraph {
+            padding: 0 2.813rem 0 2.813rem;
+        }
+
+    }
+
+    // Button FEATURES and description
+    .containerFeatures {
+        padding: 6.25rem 9.375rem 4.25rem 9.375rem;
+
+        &__theme {
+            font-size: 1.75rem;
+        }
+
+        &__paragraph {
+            font-size: 0.938rem;
+        }
+
+        &__btn {
+            font-size: 0.875rem;
+        }
+
+        &__image {
+            height: 17.5rem;
+            width: 9.375rem;
+        }
+    }
+
+    // Progress bar and description
+    .containerProgress {
+        padding: 0 9.375rem 0 9.375rem;
+        margin-top: 6.25rem;
+        margin-bottom: 6.25rem;
+        
+
+        &__image {
+            height: 17.5rem;
+            width: 9.375rem;
+        }
+        
+        &__theme {
+            font-size: 1.688rem;
+        }
+
+        &__paragraph {
+            font-size: 1.063rem;
+            letter-spacing: 0.013rem;
+            height: 12.5rem;
+            margin-bottom: 0;
+        }
+
+        .progressBar {
+            height: 1.25rem;
+
+            &__percent {
+                font-size: 0.875rem; 
+                height: 1.25rem;
+            }
+        }
+    }
+
+    // Comments of clients
+    .containerTestimonials {
+        padding: 0 2.5rem 0 2.5rem;
+
+        &__theme {
+            margin-top: 6.25rem;
+            font-size: 2.188rem;
+            margin-bottom: 4.375rem;
+        }
+
+        &__image {
+            height: 5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        &__paragraph {
+            font-size: 1.5rem;
+        }
+    }
+
+    // Gallery
+    .containerWorks {
+        margin: 0.625rem 3.125rem 6.25rem 3.125rem;
+
+        &__paragraph {
+            padding: 0 3.75rem 0 3.75rem;
+        }
+    }
+
+    // Cooperation with company
+    .containerCooperation {
+        height: 30vh;
+    }
+
+    // Contact with clients
+    .containerContact {
+        margin: 6.25rem 3.125rem 3.75rem 3.125rem;
+        form {
+            width: 100%;
+            padding: 0 3.75rem 0 3.75rem;
+        }
+
+        &__input {
+            width: 100%;
+        }
+    }
+
+    // Solution for clients
+    .containerSolution {
+        margin-bottom: 1.25rem;
+
+        &__theme {
+            font-size: 2.063rem;
+        }
+
+        &__paragraph {
+            font-size: 1rem;
+        }
+    }
+
+    // Part of containerInformation
+    .containerInformation__theme {
+        font-size: 2.188rem;
+        padding: 0 3.75rem 0 3.75rem;
+    }
+
+    // Part of containerInformation
+    .containerInformation__paragraph {
+        padding: 0 3.125rem 0 3.125rem;
+        font-size: 0.938rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+
+    .containerHeader {
+        padding: 0 3.125rem 0 3.125rem;
+    }
+
+    // Part of containerBenefits
+    .containerBenefits__admission--theme {
+        font-size: 1.75rem;
+    }
+
+    // Part of containerBenefits
+    .containerBenefits__admission--paragraph {
+        font-size: 0.75rem;
+        padding: 0 28.125rem 0 28.125rem;
+    }
+
+    // Part of containerBenefits
+    .benefitsList {
+        margin-left: 12.5rem;
+        margin-right: 12.5rem;
+    }
+
+    // Part of containerBenefits
+    .benefitsList__single {
+
+        &--icon {
+            height: 2.188rem;
+        }
+
+        &--theme {
+            font-size: 1.25rem;
+        }
+
+        &--paragraph {
+            font-size: 0.75rem;
+        }
+    }
+
+    // Button FEATURES and description
+    .containerFeatures {
+        height: 120vh;
+        padding-left: 18.75rem;
+        padding-right: 18.75rem;
+
+        &__theme {
+           font-size: 1.25rem;
+           min-width: 12.5rem;
+        }
+
+        &__paragraph {
+            font-size: 0.813rem;
+        }
+
+        &__btn {
+            font-size: 0.625rem;
+        }
+
+        &__image {
+            height: 25rem;
+            width: 15.625rem;
+        }
+
+        .featuresMargin {
+            margin-top: 9.375rem;
+        }
+    }
+
+    // Progress bar and description
+    .containerProgress {
+        height: 100vh;
+        padding-left: 18.75rem;
+        padding-right: 18.75rem;
+        padding-top: 3.125rem;
+
+        &__image {
+            height: 25rem;
+            width: 15.625rem;
+        }
+
+        &__theme {
+            font-size: 1.25rem;
+            min-width: 12.5rem;
+        }
+ 
+         &__paragraph {
+             font-size: 0.813rem;
+        }
+
+         .progressBar {
+            margin-top: 2.875rem;
+        }
+
+         .desktopContainerProgress {
+            margin-top: 9.375rem;
+        }
+    }
+
+    // Comments of clients
+    .containerTestimonials {
+        background-size: cover;
+
+        &__theme {
+            font-size: 1.563rem;
+        }
+
+        &__image {
+            height: 3.125rem;
+        }
+
+        &__paragraph {
+            font-size: 1.125rem;
+            padding: 0 21.875rem 0 21.875rem;
+        }
+
+        .commentPerson__image {
+            height: 2.813rem;
+        }
+
+        .commentPerson__paragraph {
+            font-size: 0.75rem;
+        }
+    }
+
+    // Gallery
+    .containerWorks {
+        margin-left: 3.125rem;
+        margin-right: 3.125rem;
+        margin-bottom: 0;
+
+        &__theme {
+            font-size: 1.563rem;
+        }
+
+        &__paragraph {
+            font-size: 0.813rem;
+            padding: 0 21.875rem 0 21.875rem;
+        }
+
+        &__list {
+            font-size: 0.75rem;
+        }
+
+        &__image {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+    }
+
+    // Cooperation with company
+    .containerCooperation {
+        height: 35vh;
+        
+        &__theme {
+            font-size: 1.375rem;
+            font-weight: normal;
+        }
+
+        &__image {
+            height: 3.125rem;
+        }
+    }
+
+    // Contact with clients
+    .containerContact {
+        
+        &__theme {
+            font-size: 1.563rem;
+        }
+
+        &__input {
+            font-size: 0.75rem;
+            padding: 0.313rem 0 0.313rem 0.625rem;
+            width: 100%;
+        }
+
+        form {
+            width: 25rem;
+        }
+    }
+
+    // Solution for clients
+    .containerSolution {
+        text-align: left;
+
+        &__theme {
+            font-size: 1.563rem;
+        }
+
+        &__paragraph {
+            font-size: 0.75rem;
+        }
+
+        &__btn {
+            font-size: 0.75rem;
+        }
+
+        .containerIcons__icon--image {
+            height: 2.5rem;
+        }
+
+        .containerIcons__icon--paragraph {
+            font-size: 0.75rem;
+        }
+    }
+
+    // Information about company, part of footer
+    .containerInformation {
+        
+        &__theme {
+            font-size: 1.563rem;
+        }
+
+        &__paragraph {
+            font-size: 0.75rem;
+        }
+
+        &__btn {
+            font-size: 0.75rem;
+        }
+    }
+
+    // Part of containerSocial
+    .containerSocial__paragraph {
+        font-size: 0.75rem;
+    }
+
+    // Part of containerSocial
+    .containerSocial__icons--single {
+        height: 0.75rem;
+    }
+}
