@@ -1,5 +1,5 @@
 # Landing Page - ROXY
-This page is onlny for tablets and phones. Desktop - work in progress.
+This page is only available for tablets and phones. Desktop - work in progress.
 
 ## Available Scripts
 
