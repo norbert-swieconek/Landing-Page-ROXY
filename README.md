@@ -26,3 +26,12 @@ From css/main.css to dist/css/main.css
 
 It's runs npm run start and npm run dev at the same time.
 I recommend using this.
+
+##Build With
+* SCSS
+* BEM
+* GULP
+* HTML5
+* GRID
+* FLEXBOX
+* RWD
