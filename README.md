@@ -5,11 +5,11 @@ This page is onlny for tablets and phones. Desktop - work in progress.
 
 In the project directory, you can run:
 
-npm run build
+`npm run build`
 
 Builds the app for production to the dist folder.
 
-npm run start
+`npm run start`
 
 Runs the app in the development mode. Open http://localhost:3000 to view it in the browser. If you want to use it you need to do npm run build first.
 
@@ -22,7 +22,7 @@ Example:
 
 From css/main.css to dist/css/main.css
 
-npm run dev
+`npm run dev`
 
 It's runs npm run start and npm run dev at the same time.
 I recommend using this.
