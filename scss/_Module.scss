@@ -9,6 +9,14 @@
     -moz-box-shadow: 0px 46px 61px 10px rgba(0,0,0,0.56);
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative
+}
+
 // header
 .containerHeader {
     height: 100vh;
@@ -25,11 +33,11 @@
 
     &--paragraph {
         margin: 0;
-        font-size: 1.563rem;  
+        font-size: 28px;  
     }
 
     &--hamburger {
-        height: 1.875rem;
+        height: 2.5rem;
     }
 }
 
@@ -75,9 +83,8 @@
 .benefitsList__single {
     text-align: center;
     margin: 0 0.625rem 0 0.625rem;
-    box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
-    -moz-box-shadow: 2px 0 38px -6px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 1px 8px 15px 5px rgba(0,0,0,0.23); 
+    box-shadow: 1px 8px 15px 5px rgba(0,0,0,0.23);
 
     &--icon {
         height: 2.813rem;
@@ -90,6 +97,7 @@
 
     &--paragraph{
         font-size: 0.938rem;
+
     }
 }
 
@@ -253,7 +261,7 @@
 .containerCooperation {
     background: rgb(29,30,148);
     background: linear-gradient(105deg, rgba(29,30,148,1) 17%, rgba(122,32,225,1) 50%, rgba(160,71,189,1) 72%, rgba(250,47,211,1) 100%);
-    height: 60vh;
+    height: 50vh;
     color: white;
 
     &__theme {
@@ -271,7 +279,7 @@
 // Contact with clients
 .containerContact {
     
-    margin: 5rem 0.938rem 0 0.938rem;
+    margin-top: 5rem;
     border-radius: 0.313rem;
 
     &__theme {
@@ -280,8 +288,8 @@
     }
 
     &__input {
-        width: 15rem;
-        margin-bottom: 1.25rem;
+        width: 22rem;
+        margin: 0 55px 1.25rem 55px;
         font-size: 1.125rem;
         padding: 0.625rem 0 0.625rem 0.938rem;
     }
@@ -324,8 +332,9 @@
         font-weight: bold;
         color: $pink-color;
         margin-top: 1.25rem;
-        font-size: 1.125rem;
+        font-size: 1rem;
         background: none;
+        padding-left: 0;
     }
 }
 
@@ -335,11 +344,11 @@
     margin-top: 1.25rem;
 
     &--image {
-        height: 3.75rem;
+        height: 3rem;
     }
 
     &--paragraph {
-        font-size: 1.125rem;
+        font-size: 1rem;
     }
 }
 
@@ -397,7 +406,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 770px) {
 
     // Squares with description
     .containerBenefits {
@@ -418,10 +427,6 @@
     .benefitsList {
         margin-left: 3.125rem;
         margin-right: 3.125rem; 
-
-        &__upperTB {
-            bottom: 6.25rem;
-        }
     }
 
     // Part of containerBenefits
@@ -439,7 +444,7 @@
         padding: 6.25rem 9.375rem 4.25rem 9.375rem;
 
         &__theme {
-            font-size: 1.75rem;
+            font-size: 1.55rem;
         }
 
         &__paragraph {
@@ -447,12 +452,12 @@
         }
 
         &__btn {
-            font-size: 0.875rem;
+            font-size: 1rem;
         }
 
         &__image {
             height: 17.5rem;
-            width: 9.375rem;
+            width: 10rem;
         }
     }
 
@@ -460,20 +465,20 @@
     .containerProgress {
         padding: 0 9.375rem 0 9.375rem;
         margin-top: 6.25rem;
-        margin-bottom: 6.25rem;
+        margin-bottom: 4rem;
         
 
         &__image {
-            height: 17.5rem;
-            width: 9.375rem;
+            height: 19rem;
+            width: 11rem;
         }
         
         &__theme {
-            font-size: 1.688rem;
+            font-size: 1.5rem;
         }
 
         &__paragraph {
-            font-size: 1.063rem;
+            font-size: 1rem;
             letter-spacing: 0.013rem;
             height: 12.5rem;
             margin-bottom: 0;
@@ -516,6 +521,10 @@
         &__paragraph {
             padding: 0 3.75rem 0 3.75rem;
         }
+
+        &__list {
+            margin-top: 20px;
+        }
     }
 
     // Cooperation with company
@@ -532,6 +541,7 @@
         }
 
         &__input {
+            margin: 0 0 15px 0;
             width: 100%;
         }
     }
@@ -562,43 +572,50 @@
     }
 }
 
-@media screen and (min-width: 992px) {
-
-
+@media screen and (min-width: 995px) {
     .containerHeader {
         padding: 0 3.125rem 0 3.125rem;
+
+        &__logo {
+
+            &--name {
+                font-size: 150px;
+            }
+        }
     }
 
     // Part of containerBenefits
     .containerBenefits__admission--theme {
-        font-size: 1.75rem;
+        font-size: 2.2rem;
     }
 
     // Part of containerBenefits
     .containerBenefits__admission--paragraph {
-        font-size: 0.75rem;
-        padding: 0 28.125rem 0 28.125rem;
+        font-size: 1rem;
+        margin: 0 550px 0 550px;
     }
 
     // Part of containerBenefits
     .benefitsList {
-        margin-left: 12.5rem;
-        margin-right: 12.5rem;
+        margin-left: 30rem;
+        margin-right: 30rem;
     }
 
     // Part of containerBenefits
     .benefitsList__single {
 
         &--icon {
-            height: 2.188rem;
+            margin: 20px 90px 25px 90px;
+            height: 2.5rem;
         }
 
         &--theme {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
         }
 
         &--paragraph {
-            font-size: 0.75rem;
+            font-size: 0.95rem;
+            padding: 0 20px 0 20px;
         }
     }
 
